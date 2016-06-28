@@ -1,0 +1,260 @@
+/* Définition des polices personnalisées
+---------------------------------------------- */
+
+@font-face {
+    font-family: 'policelight';
+    src: url('../polices/Police-Light-webfont.eot');
+    src: url('../polices/Police-Light-webfont.eot?#iefix') format('embedded-opentype'),
+        url('../polices/Police-Light-webfont.woff2') format('woff2'),
+        url('../polices/Police-Light-webfont.woff') format('woff'),
+        url('../polices/Police-Light-webfont.ttf') format('truetype'),
+        url('../polices/Police-Light-webfont.svg#policelight') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/* Eléments principaux de la page
+--------------------------------------- */
+
+body
+{    
+    font-family: policelight,Arial,Tahoma,sans-serif;
+}
+
+#bloc_page
+{
+    width: 100%;
+    /*height: 100%;*/
+    background: white;
+}
+
+/* background img
+----------------------------------------- */
+
+#backgroundalbumphoto{
+    width: 100%;
+    /*height: 750px;*/
+    height: 100%;
+    padding: 30px 0;
+    /*padding-top: 30px;*/
+    /*padding-bottom: 60px;*/
+    background-image: url("../img/imgAdmin/fond10.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-attachment: fixed;
+}
+
+img{
+    max-width: 100%;
+}
+
+.clear{
+    clear: both;
+}
+
+/* bloc_albumphoto
+---------------------------------- */
+
+#bloc_albumphoto
+{
+    width: 670px;
+    height: 800px;
+    margin: 10px auto;
+    /*border: 1px solid black;*/
+}
+
+/* colonneTamilnadu
+----------------------------------- */
+
+#colonneTamilnadu{
+    width: 220px;
+    float:left;
+    
+    /*border: 1px solid black;*/
+    height: 800px;
+}
+
+/* colonneKerala
+----------------------------------- */
+
+#colonneKerala{
+    width: 220px;
+    height: 711px;
+    float:left;
+    
+    border-left: 1px solid #000;
+    border-right: 1px solid #000;
+}
+
+/* colonneKarnataka
+----------------------------------- */
+
+#colonneKarnataka{
+    width: 220px;
+    float:left;
+
+}
+
+.titreTn{
+    width:220px;
+    height: 50px;
+    background: #F5AD3A;
+
+    text-align: center;
+    line-height: 50px;
+    border-bottom: 1px solid #000;
+}
+
+.titreKer{
+    width:220px;
+    height: 50px;
+    background: #F39C12;
+
+    text-align: center;
+    line-height: 50px;
+    border-bottom: 1px solid #000;
+}
+
+.titreKar{
+    width:220px;
+    height: 50px;
+    background: #E6790F;
+
+    text-align: center;
+    line-height: 50px;
+    border-bottom: 1px solid #000;
+}
+
+.iconephoto{
+    position: absolute;
+    left: 65px;
+    top: 65px;
+    
+    width: 60px;
+    height: 60px;
+
+    color: #fff;
+    
+    opacity: 0;
+    
+    transition-duration: 0.5s;
+    
+    z-index: 5;
+}
+
+.imagealbum:hover .iconephoto{
+    opacity: 1;
+    
+    transition-duration: 1s;
+    
+}
+
+
+/*IMAGES ALBUM PHOTO*/
+
+.imagealbum{
+    margin-top: 0px;
+    
+    position: relative;
+    
+    /*border: 1px solid black;*/
+    
+    height: 220px;
+}
+
+.fondimage{
+    position: absolute;
+    
+    width: 220px;
+    height: 220px;
+    
+    background: rgba(0,0,0,0);
+    
+    transition-duration: 1s;
+}
+
+.imagealbum:hover .fondimage{
+    background: rgba(0,0,0,0.5);
+    
+    transition-duration: 1s;
+}
+
+.imagealbum img{
+    width: 220px;
+    height: 220px;
+}
+
+/*FLECHES*/
+
+#flechehaut, .flechebas{
+    width: 30px;
+
+    margin-left: auto;
+    margin-right: auto;
+
+    transition-duration: 0.5s;
+}
+
+#flechehaut span, .flechebas span{
+    width: 30px;
+    height: 30px;
+
+    color: #5F948D;
+    text-align: center;
+    line-height: 25px;
+
+    border-radius: 15px;
+
+    background: #fff;
+
+    transition-duration: 0.5s;
+}
+
+#flechehaut{
+    position: relative;
+    /*margin-top: 0px;*/
+}
+
+#flechehaut span{
+   /* margin-bottom: -34px;*/
+   
+   position: absolute;
+   left: 0px;
+   top: 1px;
+   
+   z-index: 10;
+}
+
+.flechebas{
+    margin-top: -31px;
+}
+
+#flechehaut:hover span, .flechebas:hover span{
+    color: #fff;
+
+    background: #c85969;
+
+    transition-duration: 0.5s;
+}
+
+/* footer
+--------------------------- */
+
+#footer{
+    width: 100%;
+    height: 30px;
+
+    background: #000;
+    
+    color: #fff;
+    line-height: 30px;
+}
+
+#footer p{
+    margin-left: 10px;
+}

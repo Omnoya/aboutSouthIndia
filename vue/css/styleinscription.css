@@ -1,0 +1,169 @@
+/* Définition des polices personnalisées
+---------------------------------------------- */
+
+@font-face {
+    font-family: 'policelight';
+    src: url('../polices/Police-Light-webfont.eot');
+    src: url('../polices/Police-Light-webfont.eot?#iefix') format('embedded-opentype'),
+        url('../polices/Police-Light-webfont.woff2') format('woff2'),
+        url('../polices/Police-Light-webfont.woff') format('woff'),
+        url('../polices/Police-Light-webfont.ttf') format('truetype'),
+        url('../polices/Police-Light-webfont.svg#policelight') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/* Eléments principaux de la page
+--------------------------------------- */
+
+body
+{    
+    font-family: policelight,Arial,Tahoma,sans-serif;
+}
+
+#bloc_page
+{
+    width: 100%;
+    background: white;
+}
+
+img{
+    max-width: 100%;
+}
+
+.clear{
+    clear: both;
+}
+
+/* background img
+----------------------------------------- */
+
+#backgroundinscription{
+    width: 100%;
+    /*height: 750px;*/
+    height: 100%;
+    padding: 30px 0;
+    background-image: url("../img/imgAdmin/fond11.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-attachment: fixed;
+}
+
+/* formulaire inscription
+------------------------------------------ */
+
+#conteneur_inscription{
+    width: 500px;
+    height: 500px;
+/*    border: 1px solid #000;*/
+    margin: 40px auto;
+    background: #fff;
+}
+
+#titre_inscription{
+    position: relative;
+    border-bottom: 2px solid #000;
+    background: #FF7A1E;
+    height: 50px;
+}
+
+#titre_inscription h1{
+    position: absolute;
+    margin: 5px 20px;
+}
+
+#conteneur_inscription form{
+    /*border: 1px solid #000;*/
+    width: 500px;
+    height: 450px; 
+}
+
+.contenu_erreur{
+    width: 462px;
+    margin: -15px auto;
+    background: #F36D5D;
+}
+
+.contenu_erreur p{
+    color: white;
+    margin-left: 12px;
+}
+
+.champinscription{
+    display: block;
+    width: 450px;
+    height: 40px;
+    margin: 20px auto;
+    padding-left: 10px;
+    background: #F0F0F0;
+    border: 1px solid #E8E8E8;
+}
+
+.champinscription:hover{
+    /*border: 1px solid black;*/
+    border: 1px solid #B4B4B4;
+    transition-duration: 0.5s;
+} 
+
+.champinscription:focus{
+    /*border: 1px solid black;*/
+    border: 1px solid #B4B4B4;
+} 
+
+#submitinscription{
+    display: block;
+    margin: 20px auto;
+    width: 100px;
+    height: 100px;
+    border-radius: 50px;
+    border: none;
+    background: #5f948d;
+    font-size: 16px;
+    color: #F7E6E8;
+    transition-duration: 0.5s;
+}
+
+#submitinscription:hover{
+    /*border-radius: 20px;*/
+    background: #C85969;
+    transition-duration: 0.5s;
+}
+
+#verification{
+    position: relative;
+    background: black;
+    height: 450px;
+}
+
+#verification p{
+    position: absolute;
+    color: white;
+    font-size: 1.5em;
+    margin-left: 22px;
+    margin-right: 22px;
+    margin-top: 180px;
+}
+
+
+
+/* footer
+--------------------------- */
+
+#footer{
+    width: 100%;
+    height: 30px;
+
+    background: #000;
+    
+    color: #fff;
+    line-height: 30px;
+}
+
+#footer p{
+    margin-left: 10px;
+}

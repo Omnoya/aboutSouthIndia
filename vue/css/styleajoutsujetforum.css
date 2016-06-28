@@ -1,0 +1,594 @@
+/* Définition des polices personnalisées
+---------------------------------------------- */
+
+@font-face {
+    font-family: 'policelight';
+    src: url('../polices/Police-Light-webfont.eot');
+    src: url('../polices/Police-Light-webfont.eot?#iefix') format('embedded-opentype'),
+        url('../polices/Police-Light-webfont.woff2') format('woff2'),
+        url('../polices/Police-Light-webfont.woff') format('woff'),
+        url('../polices/Police-Light-webfont.ttf') format('truetype'),
+        url('../polices/Police-Light-webfont.svg#policelight') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/* Eléments principaux de la page
+--------------------------------------- */
+
+body
+{    
+    font-family: policelight,Arial,Tahoma,sans-serif;
+}
+
+#bloc_page
+{
+    width: 100%;
+    background: white;
+}
+
+img{
+    max-width: 100%;
+}
+
+.clear{
+    clear: both;
+}
+
+/* conteneur_lien_retour
+------------------------------------------------ */
+
+#conteneur_lien_retour{
+    width: 310px;
+    height: 60px;
+    //border: 1px solid black;
+    margin: 30px auto;
+}
+
+#conteneur_lien_retour a{
+    text-decoration: none;
+    font-size: 1.1em;
+    font-weight: bold;
+    color: white;
+}
+
+#conteneur_lien_retour #lien_retour{
+    width: 310px;
+    height: 60px;
+    background: #5F948D;
+    transition-duration: 0.5s;
+    //margin-left: 3px;
+    
+}
+
+#conteneur_lien_retour a:hover #lien_retour{
+    background: #C85969;
+    transition-duration: 0.5s;
+}
+
+#conteneur_lien_retour #lien_retour .fa {
+    margin-left: 6px;
+    margin-top: 10px;
+    font-size: 2em;
+    color: #fff;
+    transition-duration: 0.5s;
+    line-height: 25px;
+}
+
+
+/* background img
+----------------------------------------- */
+
+#backgroundforum{
+    width: 100%;
+    /*height: 750px;*/
+    height: 100%;
+    padding: 30px 0;
+    background-image: url("../img/imgAdmin/fond9.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-attachment: fixed;
+}
+
+
+/*ancre
+----------------------------------------------- */
+
+/*#ancre{
+    border: 1px solid blue;
+    width: 5px;
+    height: 5px;
+}*/
+
+
+/* conteneur_commentaire
+------------------------------------------------ */
+
+#conteneur_forum{
+    width: 936px;
+    height: 624px;
+    margin: 50px auto;
+    /*border: 1px solid #000;*/
+}
+
+.cube{
+    width: 310px;
+    height: 310px;
+    /*border: 1px solid #000;*/
+    float: left;
+}
+
+/* alerte_connexion
+------------------------------------------------ */
+
+#alerte_connexion{
+    position: absolute;
+    width: 500px;
+    height: 500px;
+    border: 1px solid #000;
+    /*margin-top: 40px;*/
+    margin-left: 16%;
+    background: #fff;
+}
+
+#titre_alerte{
+    position: relative;
+    border-bottom: 1px solid #000;
+    background: #FF7A1E;
+    height: 50px;
+}
+
+#titre_alerte h1{
+    position: absolute;
+    margin: 5px 20px;
+}
+
+#verification_connexion{
+    position: relative;
+    background: black;
+    height: 450px;
+}
+
+#verification_connexion p{
+    position: absolute;
+    color: white;
+    font-size: 1.2em;
+    margin-left: 22px;
+    margin-right: 22px;
+    margin-top: 100px;
+    text-align: center;
+}
+
+#verification_connexion p a{
+    color: #fff;
+}
+
+/* ---------- cube1 ---------- */
+
+#cube1{
+    /*text-align: center;*/
+    background: #F5AD3A;
+    width: 312px;
+    height: 313px;
+    
+    margin-left: -2px;
+}
+
+#smileface span{
+    width: 310px;
+    height: 130px;
+    
+    font-size: 6em;
+    text-align: center;
+    
+    padding-top: 20px;
+}
+
+#contenucube1{
+    width: 230px;
+    height: 50px;
+    
+    float: left;
+    
+    text-align: center;
+    font-size: 20px;
+    
+    margin-left: 10px;
+}
+
+#flechecube1{
+    width: 30px;
+    
+    font-size: 10em;
+    
+    float: right;
+    
+    margin-left: 10px;
+    margin-top: -65px;
+    margin-right: 30px;
+}
+
+
+/* ---------- cube2 ---------- */
+
+#cube2{
+    width: 310px;
+    height: 310px;
+    border: 3px solid #000;
+    background: #fff;
+    
+    position: absolute;
+    z-index: 10;
+    opacity: 1;
+}
+
+#cube2fixe{
+    width: 310px;
+    height: 310px;
+    border: 3px solid #000;
+    
+    background: #fff;
+    
+    position: absolute;
+    z-index: 10;
+    
+    opacity: 1;
+}
+
+#fondcube{
+    width: 310px;
+    height: 310px;
+    
+    margin-left: 3px;
+    margin-top: 3px;
+    
+    background: #5F948D;
+    
+    font-size: 44px;
+    
+    position: absolute;
+    z-index: 15;
+    
+    transition-duration: 0.5s;
+    
+    opacity: 1;
+        
+    transition-duration: 0.5s;
+}
+
+#fondcubefixe{
+    width: 310px;
+    height: 310px;
+    
+    margin-left: 3px;
+    margin-top: 3px;
+    
+    background: #5F948D;
+    
+    font-size: 44px;
+    
+    position: absolute;
+    z-index: 5;
+    
+    transition-duration: 0.5s;
+    
+    opacity: 0;
+        
+    transition-duration: 0.5s;
+}
+
+.iconecube{
+    display: inline-block;
+    
+    width: 200px;
+    height: 200px;
+    
+    margin-left: 50px;
+    margin-top: 30px;
+    
+    color: #fff;
+    font-size: 54px;
+}
+
+.cube:hover #fondcube {
+    opacity: 0;
+    
+    z-index: 5;
+    
+    transition-duration: 0.5s;
+}
+
+#formulaire_forum{
+    width: 310px;
+    height: 310px;
+    /*border: 1px solid #000;*/
+}
+
+#formulaire_forum form{
+    /*border: 1px solid #000;*/
+    width: 290px;
+    height: 290px;
+    margin: 5px auto;
+}
+
+.contenu_erreur{
+    width: 272px;
+    margin: -20px auto;
+    background: #F36D5D;
+}
+
+.contenu_erreur p{
+    color: white;
+    margin-left: 12px;
+}
+
+#titre{
+    display: block;
+    width: 260px;
+    height: 40px;
+    margin: 25px auto;
+    padding-left: 10px;
+    background: #F0F0F0;
+    border: 1px solid #E8E8E8;
+    font-family: 'policelight';
+    font-size: 1em;
+}
+
+#titre:hover{
+    /*border: 1px solid black;*/
+    border: 1px solid #B4B4B4;
+    transition-duration: 0.5s;
+} 
+
+#titre:focus{
+    /*border: 1px solid black;*/
+    border: 1px solid #B4B4B4;
+} 
+
+#champdescription{
+    display: block;
+    width: 260px;
+    height: 80px;
+    margin: 25px auto;
+    padding-left: 10px;
+    background: #F0F0F0;
+    border: 1px solid #E8E8E8;
+    text-decoration: none;
+    color: #111;
+    font-family: 'policelight';
+}
+
+#champdescription:hover{
+    /*border: 1px solid black;*/
+    border: 1px solid #B4B4B4;
+    resize: none;
+    transition-duration: 0.5s;
+} 
+
+#champdescription:focus{
+    /*border: 1px solid black;*/
+    border: 1px solid #B4B4B4;
+} 
+
+#submitmessage{
+    display: block;
+    margin: 25px auto;
+    width: 80px;
+    height: 80px;
+    border-radius: 40px;
+    border: none;
+    background: #5f948d;
+    font-size: 16px;
+    color: #F7E6E8;
+    transition-duration: 0.5s;
+}
+
+#submitmessage:hover{
+    /*border-radius: 20px;*/
+    background: #C85969;
+    transition-duration: 0.5s;
+}
+
+#verification{
+    position: relative;
+    background: black;
+    height: 310px;
+}
+
+#verification p{
+    position: absolute;
+    color: white;
+    font-size: 1.2em;
+    margin-left: 22px;
+    margin-right: 22px;
+    margin-top: 120px;
+    text-align: center;
+}
+
+/* ---------- cube3 ---------- */
+
+#cube3{
+    position: relative;
+    width: 312px;
+    height: 313px;
+    margin-left: 6px;
+    background: #F39C12;
+}
+
+#nbre_sujetforum{
+    position: absolute;
+    width: 310px;
+    /*border: 1px solid red;*/
+    text-align: center;
+    font-size: 1.5em;
+    margin-top: 70px;
+}
+
+#taillenbre{
+    font-size: 4em;
+    font-weight: bold;
+}
+
+/* ---------- cube4 ---------- */
+
+#cube4{
+    width: 309px;
+    height: 309px;
+    border: 3px solid #000;
+    text-align: center;
+    font-size: 16em;
+    margin-top: 3px;
+    margin-left: -2px;
+    background: #5F948D;
+    transition-duration: 0.5s;
+}
+
+#cube4:hover{
+    transition-duration: 0.5s;
+    background: #fff;
+}
+
+/* fleche gauche */
+#cube4 span{
+    margin-top: 28px;
+    margin-left: -14px;
+    color: #fff;
+    transition-duration: 0.5s;
+}
+
+#cube4:hover span{
+    transition-duration: 0.5s;
+    color: #5F948D;
+}
+
+
+/* ---------- cube5 ---------- */
+
+#cube5{
+    background: #fff;
+    width: 310px;
+    height: 312px;
+    margin-top: 6px;
+    margin-left: 3px;
+}
+
+#titre_sujetforum{
+    position: relative;
+    width:310px;
+    height: 78px;
+    background: #E6790F;
+    border-bottom: 2px solid black;
+    
+    transition-duration: 0.5s;
+    word-wrap: break-word;
+    overflow: auto;
+}
+
+#titre_sujetforum:hover{
+    background: #000;
+    transition-duration: 0.5s;
+}
+
+#titre_sujetforum h1{
+    position: absolute;
+    font-size: 1.1em;
+    margin-left: 10px;
+    margin-top: 5px;
+}
+
+#titre_sujetforum h1 #lien_sujet{
+    text-decoration: none;
+    color: black;
+    
+    transition-duration: 0.5s;
+}
+
+#titre_sujetforum:hover h1 #lien_sujet{
+    text-decoration: none;
+    color: #E6790F;
+    
+    transition-duration: 0.5s;
+}
+
+#description{
+    position: relative;
+    width:310px;
+    height: 212px;
+    
+    word-wrap: break-word;
+    overflow: auto;
+}
+
+#description p{
+    position: absolute;
+    margin-left: 10px;
+    margin-top: 3px;
+}
+
+#footer_sujetforum{
+    position: relative;
+    width:310px;
+    height: 20px;
+    background: #E6790F;
+}
+
+/*#footer_sujetforum p{
+    position: absolute;
+    margin-left: 10px;
+    margin-top: 10px;
+}*/
+
+/* ---------- cube6 ---------- */
+
+#cube6{
+    width: 309px;
+    height: 309px;
+    border: 3px solid #000;
+    text-align: center;
+    font-size: 16em;
+    margin-top: 3px;
+    margin-left: 3px;
+    background: #5F948D;
+    transition-duration: 0.5s;
+}
+
+#cube6:hover{
+    transition-duration: 0.5s;
+    background: #fff;
+}
+
+/* fleche droite */
+#cube6 span{
+    margin-top: 28px;
+    margin-left: 14px;
+    color: #fff;
+    transition-duration: 0.5s;
+     
+}
+
+#cube6:hover span{
+    transition-duration: 0.5s;
+    color: #5F948D;
+}
+
+/* footer
+--------------------------- */
+
+#footer{
+    width: 100%;
+    height: 30px;
+
+    background: #000;
+    
+    color: #fff;
+    line-height: 30px;
+}
+
+#footer p{
+    margin-left: 10px;
+}

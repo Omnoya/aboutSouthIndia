@@ -1,0 +1,352 @@
+/* Définition des polices personnalisées
+---------------------------------------------- */
+
+@font-face {
+    font-family: 'policelight';
+    src: url('../polices/Police-Light-webfont.eot');
+    src: url('../polices/Police-Light-webfont.eot?#iefix') format('embedded-opentype'),
+        url('../polices/Police-Light-webfont.woff2') format('woff2'),
+        url('../polices/Police-Light-webfont.woff') format('woff'),
+        url('../polices/Police-Light-webfont.ttf') format('truetype'),
+        url('../polices/Police-Light-webfont.svg#policelight') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/* Eléments principaux de la page
+--------------------------------------- */
+
+body{
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+img{
+    max-width: 100%;
+}
+
+.clear{
+    clear: both;
+}
+
+/* header
+-------------- */
+
+header{
+    position: relative;
+}
+
+#banniere{
+    width: 100%;
+}
+
+/* logo
+------------ */
+
+#logo{
+    position: absolute;
+    top: 10px;
+    left: 450px;
+    width: 320px;
+}
+
+/* nav
+----------- */
+
+nav{
+    position: absolute;
+    right: 50px;
+    top: 15px;
+}
+
+nav ul {
+    list-style-type: none;
+}
+
+nav .inactif{
+    background: #70C570;
+    padding: 8px;
+    border-radius: 10px;
+    margin-bottom: 5px;
+    text-align: center;
+    transition-duration: 0.5s;
+}
+
+nav .inactif:hover{
+    background: #6CB16C;
+    transition-duration: 0.5s; 
+}
+
+nav .actif{
+    background: #5A9E5A;
+    border-radius: 10px;
+    margin-bottom: 5px;
+    padding: 8px;
+    text-align: center;
+}
+
+nav a{
+    font-family: 'policelight';
+    font-size: 1em;
+    color: #FFFFFF;
+    text-decoration: none;
+
+}
+
+/* bouton retour + deconnexion
+----------------------------------- */
+
+#lien_retour{
+    position: absolute;
+    height:120px;
+    line-height:120px;
+    width: 120px;
+    text-align:center;
+    background: #C85969;
+    border-radius: 60px;
+    font-size: 0.9em;
+    top: 10px;
+    left: 30px;
+    font-family: 'policelight';
+    text-decoration: none;
+    color: #fff;
+    transition-duration: 0.5s;
+}
+
+#lien_retour:hover{
+    background: #fff;
+    color: #C85969;
+    transition-duration: 0.5s;
+}
+
+#lien_deconnexion{
+    position: absolute;
+    height:120px;
+    line-height:120px;
+    width: 120px;
+    text-align:center;
+    background: #C85969;
+    border-radius: 60px;
+    font-size: 0.9em;
+    top: 145px;
+    left: 30px;
+    font-family: 'policelight';
+    text-decoration: none;
+    color: #fff;
+    transition-duration: 0.5s;
+}
+
+#lien_deconnexion:hover{
+    background: #fff;
+    color: #C85969;
+    transition-duration: 0.5s;
+}
+
+//CONTENU DE LA PAGE GESTION ARTICLE
+
+#bloc_page{
+    width: 100%;
+}
+
+#conteneur_indexadmin{
+    display: block;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    background-image: url("../img/imgAdmin/fond5.jpg");
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+#conteneur_indexadminmembre{
+    display: block;
+    width: 100%;
+    height: 500px;
+    margin-left: auto;
+    margin-right: auto;
+    background-image: url("../img/imgAdmin/fond5.jpg");
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+#conteneur_indexadminphoto{
+    display: block;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    background-image: url("../img/imgAdmin/fond5.jpg");
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+#conteneur_gestion_article, #conteneur_gestion_sujetforum, #conteneur_gestion_messageforum, #conteneur_gestion_commentaire, #conteneur_gestion_albumphotos{
+    display: block;
+    
+    width: 900px;
+    
+    margin-left: auto;
+    margin-right: auto;
+    padding: 10px;
+    padding-bottom: 50px;
+    
+    background: rgba(255,255,255,0.5);
+    
+    font-family: 'policelight';
+}
+
+#conteneur_gestion_membre{
+    display: block;
+    
+    width: 1200px;
+    
+    margin-left: auto;
+    margin-right: auto;
+    padding: 10px;
+    padding-bottom: 50px;
+    
+    background: rgba(255,255,255,0.5);
+    
+    font-family: 'policelight';
+}
+
+#conteneur_indexadmin #conteneur_gestion_article form p, #conteneur_gestion_sujetforum form p, #conteneur_gestion_albumphotos form p, #conteneur_gestion_albumphotos form p{
+    background: #f36d5d;
+    
+    color: #fff;
+}
+
+#conteneur_gestion_article input, #conteneur_gestion_sujetforum input, #conteneur_gestion_albumphotos input{
+    border-style: none;
+    
+    margin-left: 10px;
+    
+    background: #b3b2b2;
+    
+    font-family: 'policelight';
+}
+
+#conteneur_gestion_membre input{
+    border-style: none;
+    
+    margin-left: 10px;
+    
+    width: 100px;
+    
+    background: rgba(195,195,195,0.5);
+    
+    font-family: 'policelight';
+}
+
+#conteneur_gestion_membre button{
+    border-style: none;
+    
+    background: rgba(255,122,30,0.5);
+    
+    color: #fff;
+    font-family: 'policelight';
+    font-size: 18px;
+}
+
+#conteneur_gestion_membre button:hover{
+    background: rgba(240,96,0,0.8);
+}
+
+#conteneur_gestion_article h2, #conteneur_gestion_sujetforum h2, #conteneur_gestion_membre h2, #conteneur_gestion_commentaire h2, #conteneur_gestion_albumphotos h2{
+    font-size: 24px;
+    font-weight: bold;
+}
+
+#conteneur_gestion_article table, #conteneur_gestion_messageforum table, #conteneur_gestion_membre table, #conteneur_gestion_albumphotos table{
+    display: inline-block;
+    
+    width: 900px;
+    
+    //border: 1px solid black;
+}
+
+#conteneur_gestion_commentaire table{
+    display: inline-block;
+    
+    width: 900px;
+    
+    margin-top: 50px;
+}
+
+
+#conteneur_gestion_article td, #conteneur_gestion_sujetforum td, #conteneur_gestion_messageforum td, #conteneur_gestion_commentaire td, #conteneur_gestion_albumphotos td{
+    border: 0.5px solid black;
+    
+    padding: 10px;
+}
+
+#conteneur_gestion_membre td{
+    border: 0.5px solid black;
+    
+    height: 40px;
+}
+
+#conteneur_gestion_article label, #conteneur_gestion_sujetforum label, #conteneur_gestion_albumphotos label{
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+#conteneur_gestion_article tr:hover, #conteneur_gestion_sujetforum tr:hover, #conteneur_gestion_messageforum tr:hover, #conteneur_gestion_membre tr:hover, #conteneur_gestion_commentaire tr:hover, #conteneur_gestion_albumphotos tr:hover{
+    background: rgba(255,122,30,0.5);
+}
+
+#conteneur_gestion_article tr a, #conteneur_gestion_sujetforum a, #conteneur_gestion_messageforum a, #conteneur_gestion_membre a, #conteneur_gestion_commentaire a, #conteneur_gestion_albumphotos a{
+    text-decoration: none;
+    color: #111;
+    font-weight: bold;
+}
+
+#conteneur_gestion_article tr a:hover, #conteneur_gestion_sujetforum tr a:hover, #conteneur_gestion_messageforum tr a:hover, #conteneur_gestion_membre a:hover, #conteneur_gestion_commentaire a:hover, #conteneur_gestion_albumphotos a:hover{
+    text-decoration: underline;
+}
+
+#conteneur_gestion_article form, #conteneur_gestion_sujetforum form, #conteneur_gestion_albumphotos form{
+    display: block;
+    
+    padding-bottom: 10px;
+    padding-top: 10px;
+    
+    margin-bottom: 100px;
+}
+
+#conteneur_gestion_article input:last-child, #conteneur_gestion_sujetforum input:last-child, #conteneur_gestion_sujetforum #rafraichir, #conteneur_gestion_albumphotos input:last-child, #conteneur_gestion_albumphotos #rafraichir{
+    display: block;
+    
+    margin-left: auto;
+    margin-right: auto;
+    
+    width: 200px;
+    height: 50px;
+    
+    background: rgba(255,122,30,0.5);
+    
+    color: #fff;
+    
+    font-family: 'policelight';
+}
+
+#conteneur_gestion_article input:last-child:hover, #conteneur_gestion_sujetforum input:last-child:hover, #conteneur_gestion_sujetforum #rafraichir:hover, #conteneur_gestion_albumphotos input:last-child:hover{
+    background: rgba(240,96,0,0.8);
+}
+
+#conteneur_gestion_article .tdimage{
+    overflow: hidden;
+}
+
+#etatSud, #conteneur_gestion_albumphotos form textarea{
+    border-style: none;
+    
+    font-family: 'policelight';
+}

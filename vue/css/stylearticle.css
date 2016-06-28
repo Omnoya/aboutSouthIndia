@@ -1,0 +1,353 @@
+/* Définition des polices personnalisées
+---------------------------------------------- */
+
+@font-face {
+    font-family: 'policelight';
+    src: url('../polices/Police-Light-webfont.eot');
+    src: url('../polices/Police-Light-webfont.eot?#iefix') format('embedded-opentype'),
+        url('../polices/Police-Light-webfont.woff2') format('woff2'),
+        url('../polices/Police-Light-webfont.woff') format('woff'),
+        url('../polices/Police-Light-webfont.ttf') format('truetype'),
+        url('../polices/Police-Light-webfont.svg#policelight') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/* Eléments principaux de la page
+--------------------------------------- */
+
+body
+{    
+    font-family: policelight,Arial,Tahoma,sans-serif;
+}
+
+#bloc_page
+{
+    width: 100%;
+    background: #FFFFFF;
+}
+
+img{
+    max-width: 100%;
+}
+
+.clear{
+    clear: both;
+}
+
+/* background img
+----------------------------------------- */
+
+#backgroundarticle{
+    width: 100%;
+    /*height: 750px;*/
+    height: 100%;
+    padding: 30px 0;
+    background-image: url("../img/imgAdmin/fond2.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-attachment: fixed;
+}
+
+
+
+/* conteneur_article
+----------------------------- */
+#conteneur_article{
+    width: 904px;
+    height: 904px;
+    /*border: 1px solid black;*/
+    margin: 20px auto;
+    position: relative;
+}
+
+#conteneur_article img{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+/* contenu_nbre_article
+----------------------------- */
+
+#contenu_nbre_article{
+    position: absolute;
+    width: 294px;
+    height: 294px;
+    border: 6px solid rgba(255,255,255,0.9);
+    background-color: rgba(0,0,0,0.5);
+}
+
+#nbre_article{
+    width: 294px;
+    height: 210px;
+    /*border: 1px solid blue;*/
+}
+
+#total_article{
+    width: 294px;
+    height: 80px;
+    /*border: 1px solid blue;*/
+    text-align: center;
+}
+
+#total_article p{
+    font-size: 1.5em;
+    color: white;
+    margin-top: 40px;
+    margin-left: -8px;
+
+/*    margin-top: 15px;
+    margin-left: 10px;*/
+}
+
+#compte_page{
+    width: 294px;
+    height: 20px;
+    /*border: 1px solid blue;*/
+    text-align: center;
+}
+
+#compte_page p{
+    font-size: 1.2em;
+    color: white;
+    margin-left: -10px;
+    margin-top: -10px;
+    /*border: 1px solid blue;*/
+
+/*    margin-left: 10px;*/
+}
+
+/* bloc_titre
+---------------------------- */
+
+#bloc_titre{
+    width: 598px;
+    height: 94px;
+    /*border: 1px solid red;*/
+    position: absolute;
+    margin-left: 306px;
+    margin-top: 180px;
+    background-color: rgba(230, 121, 15,0.8);
+}
+
+#titre{
+    width: 598px;
+    height: 94px;
+    /*border-bottom: 1px solid rgba(255,255,255,0.5);*/
+    /*border: 1px solid blue;*/
+
+    word-wrap: break-word;
+    overflow: auto;
+}
+
+#titre h1{
+    font-size: 1.5em;
+    margin-left: 16px;
+    margin-right: 5px;
+    margin-top: 36px;
+    color: #000;
+    text-transform: uppercase;
+}
+
+
+
+/* bloc_pagination
+------------------------------ */
+
+#bloc_pagination{
+    width: 294px;
+    height: 88px;
+    /*border: 1px solid blue;*/
+    text-align: center;
+}
+
+#pagination{
+    width:294px;
+    height:88px;
+    margin-top: -40px;
+    margin-left: -8px;
+    /*border: 1px solid blue;*/
+
+
+    /*text-align: center;*/
+}
+
+#pagination .lien_num{
+    font-size: 2em;
+    text-decoration: none;
+    color: #fff;
+    margin-left: 10px;
+    /*margin-right:1px;*/
+}
+
+#pagination .lien_fleche{
+    font-size: 2em;
+    text-decoration: none;
+    color: #fff;
+    margin-left: 10px;
+    /*margin-right: 1px;*/
+}
+
+#pagination .active{
+    font-size: 2em;
+    background-color: rgba(243, 132, 0,0.7);
+    padding: 0 5px 0 5px;
+    /*border-radius: 15px;*/
+    margin-left: 10px;
+    /*margin-right: 1px;*/
+
+}
+
+/* conteneur_lien
+----------------------------- */
+
+#conteneur_lien{
+    width: 280px;
+    height: 565px;
+    position: absolute;
+    /*border: 1px solid black;*/
+    margin-top: 320px;
+    margin-left: 12px;
+}
+
+#conteneur_lien .titre_liste_article{
+    width : 280px;
+    height : 50px;
+    /*border: 1px solid black;*/
+    background-color: rgba(230, 121, 15,0.8); 
+}
+
+#conteneur_lien .titre_liste_article h1{
+    margin-left: 10px;
+    margin-top: 8px;
+    padding-top: 8px;
+}
+
+#conteneur_lien .conteneur_lien_article{
+    /*    margin-top: 10px;
+        margin-left : 10px;*/
+    width : 280px;
+    height : 512px;
+    /*border: 1px solid black;*/
+    background-color: rgba(255, 255, 255,0.7); 
+
+    word-wrap: break-word;
+    overflow: auto;
+
+}
+
+.conteneur_lien_article .contenu_lien{
+
+    width: 280px;
+    /*border: 1px solid black;*/
+}
+
+.conteneur_lien_article .contenu_lien:hover{
+
+    background: rgba(95, 148, 141,0.4); 
+}
+
+.conteneur_lien_article .contenu_lien .lien_article{
+    width: 260px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    margin-left: 10px;
+
+}
+
+.lien_article a{
+    text-decoration: none;
+    color: #000;
+    font-size: 0.9em;
+    font-weight: bold;
+}
+
+
+/* contenu_article
+------------------------------ */
+
+#contenu_article{
+    position: absolute;
+    width: 586px;
+    height: 586px;
+    margin-left: 306px;
+    margin-top: 306px;
+
+    border: 6px solid rgba(0,0,0,0.9);
+    background-color: rgba(255,255,255,0.7);
+}
+
+#article{
+    width: 586px;
+    height: 586px;
+    border: 1px solid blue;
+
+    word-wrap: break-word;
+    overflow: auto;
+}
+
+#article h3{
+    margin-left: 10px;
+}
+
+#article p{
+
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+#article .lien_ancre{
+    text-decoration: none;
+    color: #000;
+}
+
+#article .lien_ancre:hover{
+    background: rgba(95, 148, 141,0.4);
+}
+
+#article #haut_page{
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    border-radius: 15px;
+    background: rgba(200, 89, 105,0.8);
+    margin-left: -27px;
+    margin-top: 240px;
+}
+
+#haut_page #lien_haut .fa{
+    color: rgba(255, 255, 255,0.8);
+    margin-left:5px;
+    margin-top: 5px;
+    transition-duration: 0.5s;
+}
+
+#haut_page #lien_haut:hover .fa{
+    color: rgba(0, 0, 0,0.8);
+    margin-left:5px;
+    margin-top: 5px;
+    transition-duration: 0.5s;
+}
+
+/* footer
+--------------------------- */
+
+#footer{
+    width: 100%;
+    height: 30px;
+
+    background: #000;
+
+    color: #fff;
+    line-height: 30px;
+}
+
+#footer p{
+    margin-left: 10px;
+}
